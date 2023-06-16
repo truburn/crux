@@ -8,8 +8,12 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "test": "jest --coverage",
+    "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
+    "test-storybook": "test-storybook",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "dependencies": {
     "formik": "^2.4.2",
