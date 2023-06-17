@@ -2,9 +2,5 @@
  * Blockquote element
  */
 export function Blockquote() {
-  return (
-    <div>
-      <Blockquote></Blockquote>
-    </div>
-  );
+  return <div>Blockquote Element</div>;
 }
