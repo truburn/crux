@@ -14,6 +14,7 @@ const config: StorybookConfig = {
     "@storybook/addon-coverage",
     "storybook-addon-react-router-v6",
     "@storybook/addon-styling",
+    "storybook-addon-mock",
   ],
   framework: {
     name: "@storybook/react-vite",

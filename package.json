@@ -21,6 +21,7 @@
     "react": "^18.2.0",
     "react-aria": "^3.25.0",
     "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
     "react-router-dom": "^6.13.0"
   },
   "devDependencies": {
@@ -58,6 +59,7 @@
     "playwright": "^1.35.1",
     "prop-types": "15.8.1",
     "storybook": "7.0.21",
+    "storybook-addon-mock": "^4.0.0",
     "storybook-addon-react-router-v6": "^1.0.2",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
