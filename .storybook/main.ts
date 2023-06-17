@@ -7,28 +7,15 @@ const resolvedPath = (dirPath) => path.resolve(__dirname, `../src/${dirPath}`);
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
-    path.dirname(
-      require.resolve(path.join("@storybook/addon-links", "package.json"))
-    ),
-    path.dirname(
-      require.resolve(path.join("@storybook/addon-essentials", "package.json"))
-    ),
-    path.dirname(
-      require.resolve(
-        path.join("@storybook/addon-interactions", "package.json")
-      )
-    ),
-    path.dirname(
-      require.resolve(path.join("@storybook/addon-a11y", "package.json"))
-    ),
-    path.dirname(
-      require.resolve(path.join("@storybook/addon-coverage", "package.json"))
-    ),
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+    "@storybook/addon-a11y",
+    "@storybook/addon-coverage",
+    "storybook-addon-react-router-v6",
   ],
   framework: {
-    name: path.dirname(
-      require.resolve(path.join("@storybook/react-vite", "package.json"))
-    ),
+    name: "@storybook/react-vite",
     options: {},
   },
   docs: {
