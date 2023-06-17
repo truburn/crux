@@ -21,6 +21,9 @@ const config: StorybookConfig = {
     path.dirname(
       require.resolve(path.join("@storybook/addon-a11y", "package.json"))
     ),
+    path.dirname(
+      require.resolve(path.join("@storybook/addon-coverage", "package.json"))
+    ),
   ],
   framework: {
     name: path.dirname(
