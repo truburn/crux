@@ -21,7 +21,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react-refresh", "react", "jest"],
+  plugins: ["react-refresh", "react", "jest", "@emotion"],
   rules: {
     "react-refresh/only-export-components": "warn",
     "no-underscore-dangle": 0,
@@ -35,5 +35,6 @@ module.exports = {
         tsx: "always",
       },
     ],
+    "@emotion/syntx-preference": [2, "object"],
   },
 };

@@ -14,6 +14,7 @@ const config: Config = {
   }),
   preset: `ts-jest`,
   modulePathIgnorePatterns: [`node_modules`, `.jest-test-results.json`],
+  snapshotSerializers: ["@emotion/jest/serializer"],
 };
 
 export default config;
