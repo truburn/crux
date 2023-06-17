@@ -21,7 +21,11 @@ jobs:
         run: |
           npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
             "npx http-server storybook-static --port 6006 --silent" \
-            "npx wait-on tcp:6006 && yarn test-storybook --coverage"
+            "npx wait-on tcp:6006 && yarn test-storybook"
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
   jest-tests:
     timeout-minutes: 60
     runs-on: ubuntu-latest
@@ -33,4 +37,8 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Run the jest tests with coverage
-        run: yarn test --coverage
+        run: yarn test
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
