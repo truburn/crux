@@ -43,7 +43,7 @@ export default defineConfig({
       },
       {
         find: "@theme",
-        replacement: resolvedPath("utils/theme"),
+        replacement: resolvedPath("theme"),
       },
     ],
   },

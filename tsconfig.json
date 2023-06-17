@@ -26,7 +26,7 @@
       "@pages/*": ["./pages/*"],
       "@template/*": ["./template/*"],
       "@utils/*": ["./utils/*"],
-      "@theme/*": ["./utils/theme/*"]
+      "@theme/*": ["./theme/*"]
     }
   },
   "include": ["src"],

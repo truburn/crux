@@ -70,7 +70,7 @@ const config: StorybookConfig = {
           },
           {
             find: "@theme",
-            replacement: resolvedPath("utils/theme"),
+            replacement: resolvedPath("theme"),
           },
         ],
       },
