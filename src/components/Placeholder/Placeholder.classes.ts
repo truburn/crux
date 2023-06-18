@@ -1,1 +1,3 @@
-export function placeholderClasses() {}
+export function placeholderclasses() {
+  return null;
+}

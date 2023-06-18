@@ -1,1 +1,3 @@
-export function headingClasses() {}
+export function headingclasses() {
+  return null;
+}

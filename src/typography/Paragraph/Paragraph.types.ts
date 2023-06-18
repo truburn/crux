@@ -1,1 +1,1 @@
-export interface ParagraphProps extends HTMLBaseElement {}
+export type ParagraphProps = HTMLBaseElement

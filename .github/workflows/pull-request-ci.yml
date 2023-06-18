@@ -52,7 +52,7 @@ jobs:
         uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-  type-checker:
+  type-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -63,3 +63,25 @@ jobs:
         run: yarn install
       - name: Look for Typescript errors
         run: yarn tsc
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+      - name: Install dependencies
+        run: yarn install
+      - name: Check Prettier
+        run: npx prettier --check .
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+      - name: Install dependendencies
+        run: yarn install
+      - name: Check Lint
+        run: yarn lint

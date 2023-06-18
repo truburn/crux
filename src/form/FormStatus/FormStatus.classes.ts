@@ -1,1 +1,3 @@
-export function formStatusClasses() {}
+export function formStatusclasses() {
+  return null;
+}

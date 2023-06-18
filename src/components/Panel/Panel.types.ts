@@ -1,1 +1,1 @@
-export interface PanelProps extends HTMLBaseElement {}
+export type PanelProps = HTMLBaseElement

@@ -1,1 +1,1 @@
-export interface SwitchProps extends HTMLBaseElement {}
+export type SwitchProps = HTMLBaseElement

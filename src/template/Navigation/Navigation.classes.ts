@@ -1,1 +1,3 @@
-export function navigationClasses() {}
+export function navigationclasses() {
+  return null;
+}

@@ -1,1 +1,3 @@
-export function panelClasses() {}
+export function panelclasses() {
+  return null;
+}

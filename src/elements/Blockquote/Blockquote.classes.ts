@@ -1,1 +1,3 @@
-export function blockquoteClasses() {}
+export function blockquoteclasses() {
+  return null;
+}

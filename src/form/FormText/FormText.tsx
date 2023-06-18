@@ -1,3 +1,4 @@
+import React from "react";
 /**
  * Element for rendering specific styles for form text
  */

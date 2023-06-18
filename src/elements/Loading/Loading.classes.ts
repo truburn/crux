@@ -1,1 +1,3 @@
-export function loadingClasses() {}
+export function loadingclasses() {
+  return null;
+}

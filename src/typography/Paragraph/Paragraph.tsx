@@ -1,3 +1,4 @@
+import React from "react";
 /**
  * Standardized paragraph element
  */

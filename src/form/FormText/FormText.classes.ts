@@ -1,1 +1,3 @@
-export function formTextClasses() {}
+export function formTextclasses() {
+  return null;
+}

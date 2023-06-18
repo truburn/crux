@@ -1,1 +1,3 @@
-export function switchClasses() {}
+export function switchclasses() {
+  return null;
+}

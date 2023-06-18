@@ -1,1 +1,3 @@
-export function footerClasses() {}
+export function footerclasses() {
+  return null;
+}

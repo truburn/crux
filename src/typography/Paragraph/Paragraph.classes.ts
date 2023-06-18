@@ -1,1 +1,3 @@
-export function paragraphClasses() {}
+export function paragraphclasses() {
+  return null;
+}

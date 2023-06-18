@@ -1,1 +1,3 @@
-export function inputBoxClasses() {}
+export function inputBoxclasses() {
+  return null;
+}

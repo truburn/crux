@@ -1,1 +1,1 @@
-export interface InputBoxProps extends HTMLBaseElement {}
+export type InputBoxProps = HTMLBaseElement

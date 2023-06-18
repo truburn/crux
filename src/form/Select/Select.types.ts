@@ -1,1 +1,1 @@
-export interface SelectProps extends HTMLBaseElement {}
+export type SelectProps = HTMLBaseElement

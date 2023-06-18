@@ -1,1 +1,1 @@
-export interface PageTitleProps extends HTMLBaseElement {}
+export type PageTitleProps = HTMLBaseElement

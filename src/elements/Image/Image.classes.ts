@@ -1,1 +1,3 @@
-export function imageClasses() {}
+export function imageclasses() {
+  return null;
+}

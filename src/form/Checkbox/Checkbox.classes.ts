@@ -1,1 +1,3 @@
-export function checkboxClasses() {}
+export function checkboxclasses() {
+  return null;
+}

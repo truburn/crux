@@ -1,1 +1,1 @@
-export interface LoadingProps extends HTMLBaseElement {}
+export type LoadingProps = HTMLBaseElement

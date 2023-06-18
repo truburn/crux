@@ -1,1 +1,1 @@
-export interface FormTextProps extends HTMLBaseElement {}
+export type FormTextProps = HTMLBaseElement

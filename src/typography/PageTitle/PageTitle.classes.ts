@@ -1,1 +1,3 @@
-export function pageTitleClasses() {}
+export function pageTitleclasses() {
+  return null;
+}

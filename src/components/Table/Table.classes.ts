@@ -1,1 +1,3 @@
-export function tableClasses() {}
+export function tableclasses() {
+  return null;
+}

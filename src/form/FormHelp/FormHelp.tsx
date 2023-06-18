@@ -1,3 +1,4 @@
+import React from "react";
 /**
  * Formatted text for form input help text
  */

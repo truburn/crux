@@ -1,1 +1,1 @@
-export interface ContainerProps extends HTMLBaseElement {}
+export type ContainerProps = HTMLBaseElement

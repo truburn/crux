@@ -1,1 +1,3 @@
-export function labelClasses() {}
+export function labelclasses() {
+  return null;
+}

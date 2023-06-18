@@ -1,1 +1,1 @@
-export interface ListProps extends HTMLBaseElement {}
+export type ListProps = HTMLBaseElement

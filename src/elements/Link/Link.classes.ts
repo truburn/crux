@@ -1,1 +1,3 @@
-export function linkClasses() {}
+export function linkclasses() {
+  return null;
+}

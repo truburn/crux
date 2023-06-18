@@ -1,1 +1,1 @@
-export interface LinkProps extends HTMLBaseElement {}
+export type LinkProps = HTMLBaseElement

@@ -1,1 +1,3 @@
-export function iconClasses() {}
+export function iconclasses() {
+  return null;
+}

@@ -1,1 +1,3 @@
-export function dashboardClasses() {}
+export function dashboardclasses() {
+  return null;
+}

@@ -1,1 +1,1 @@
-export interface TableProps extends HTMLBaseElement {}
+export type TableProps = HTMLBaseElement

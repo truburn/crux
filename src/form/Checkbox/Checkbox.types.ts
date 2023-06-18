@@ -1,1 +1,1 @@
-export interface CheckboxProps extends HTMLBaseElement {}
+export type CheckboxProps = HTMLBaseElement

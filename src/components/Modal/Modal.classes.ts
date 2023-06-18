@@ -1,1 +1,3 @@
-export function modalClasses() {}
+export function modalclasses() {
+  return null;
+}
