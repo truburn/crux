@@ -1,1 +1,1 @@
-export type ContainerProps = HTMLBaseElement
+export type ContainerProps = HTMLBaseElement;

@@ -1,1 +1,1 @@
-export type ButtonProps = HTMLBaseElement
+export type ButtonProps = HTMLBaseElement;

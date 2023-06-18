@@ -1,1 +1,1 @@
-export type SelectProps = HTMLBaseElement
+export type SelectProps = HTMLBaseElement;

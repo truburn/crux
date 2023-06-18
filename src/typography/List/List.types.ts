@@ -1,1 +1,1 @@
-export type ListProps = HTMLBaseElement
+export type ListProps = HTMLBaseElement;

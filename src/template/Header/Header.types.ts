@@ -1,1 +1,1 @@
-export type HeaderProps = HTMLBaseElement
+export type HeaderProps = HTMLBaseElement;

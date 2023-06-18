@@ -1,1 +1,1 @@
-export type LabelProps = HTMLBaseElement
+export type LabelProps = HTMLBaseElement;

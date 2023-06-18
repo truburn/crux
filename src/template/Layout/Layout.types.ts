@@ -1,1 +1,1 @@
-export type LayoutProps = HTMLBaseElement
+export type LayoutProps = HTMLBaseElement;

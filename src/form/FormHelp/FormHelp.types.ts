@@ -1,1 +1,1 @@
-export type FormHelpProps = HTMLBaseElement
+export type FormHelpProps = HTMLBaseElement;

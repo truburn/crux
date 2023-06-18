@@ -1,1 +1,1 @@
-export type PanelProps = HTMLBaseElement
+export type PanelProps = HTMLBaseElement;

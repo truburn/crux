@@ -1,1 +1,1 @@
-export type HomeProps = HTMLBaseElement
+export type HomeProps = HTMLBaseElement;

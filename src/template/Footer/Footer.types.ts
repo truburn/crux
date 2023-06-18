@@ -1,1 +1,1 @@
-export type FooterProps = HTMLBaseElement
+export type FooterProps = HTMLBaseElement;

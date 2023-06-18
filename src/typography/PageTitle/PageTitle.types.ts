@@ -1,1 +1,1 @@
-export type PageTitleProps = HTMLBaseElement
+export type PageTitleProps = HTMLBaseElement;

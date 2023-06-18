@@ -1,1 +1,1 @@
-export type DashboardProps = HTMLBaseElement
+export type DashboardProps = HTMLBaseElement;

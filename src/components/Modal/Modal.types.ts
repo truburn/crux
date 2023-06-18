@@ -1,1 +1,1 @@
-export type ModalProps = HTMLBaseElement
+export type ModalProps = HTMLBaseElement;

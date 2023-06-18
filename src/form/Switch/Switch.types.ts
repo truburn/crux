@@ -1,1 +1,1 @@
-export type SwitchProps = HTMLBaseElement
+export type SwitchProps = HTMLBaseElement;

@@ -1,1 +1,1 @@
-export type FormTextProps = HTMLBaseElement
+export type FormTextProps = HTMLBaseElement;

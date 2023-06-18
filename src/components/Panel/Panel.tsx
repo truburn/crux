@@ -1,4 +1,3 @@
-import React from "react";
 /**
  * Formatted Panel Component
  */

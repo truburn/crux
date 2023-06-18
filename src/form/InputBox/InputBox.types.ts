@@ -1,1 +1,1 @@
-export type InputBoxProps = HTMLBaseElement
+export type InputBoxProps = HTMLBaseElement;

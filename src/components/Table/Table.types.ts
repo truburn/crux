@@ -1,1 +1,1 @@
-export type TableProps = HTMLBaseElement
+export type TableProps = HTMLBaseElement;

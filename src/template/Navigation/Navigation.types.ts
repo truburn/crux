@@ -1,1 +1,1 @@
-export type NavProps = HTMLBaseElement
+export type NavProps = HTMLBaseElement;

@@ -1,1 +1,1 @@
-export type LoadingProps = HTMLBaseElement
+export type LoadingProps = HTMLBaseElement;

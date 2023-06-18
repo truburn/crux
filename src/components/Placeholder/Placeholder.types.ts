@@ -1,1 +1,1 @@
-export type PlaceholderProps = HTMLBaseElement
+export type PlaceholderProps = HTMLBaseElement;

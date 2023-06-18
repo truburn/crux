@@ -12,6 +12,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:jest/recommended",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:storybook/recommended",
     "plugin:import/recommended",
   ],
@@ -30,6 +31,9 @@ module.exports = {
       node: {
         extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
       },
+    },
+    react: {
+      version: "detect",
     },
   },
   rules: {

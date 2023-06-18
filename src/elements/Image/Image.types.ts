@@ -1,1 +1,1 @@
-export type ImageProps = HTMLBaseElement
+export type ImageProps = HTMLBaseElement;

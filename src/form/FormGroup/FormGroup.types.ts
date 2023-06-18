@@ -1,1 +1,1 @@
-export type FormGroupProps = HTMLBaseElement
+export type FormGroupProps = HTMLBaseElement;
