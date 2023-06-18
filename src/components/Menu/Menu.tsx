@@ -1,4 +1,4 @@
-import { menuClasses } from "@components/Menu";
+import { menuClasses } from "@/components/Menu";
 /**
  * Dropdown menu component
  */

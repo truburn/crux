@@ -26,20 +26,6 @@ const config: StorybookConfig = {
     autodocs: "tag",
     defaultName: "Overview",
   },
-  viteFinal: async (config) => {
-    const tmpConfig = {
-      resolve: {
-        alias: [
-          {
-            find: "@",
-            replacement: path.resolve(__dirname, "../src"),
-          },
-        ],
-      },
-    };
-
-    return mergeConfig(config, tmpConfig);
-  },
   staticDirs: ["../public"],
 };
 export default config;
