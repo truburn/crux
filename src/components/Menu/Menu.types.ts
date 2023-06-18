@@ -1,1 +1,1 @@
-export interface MenuProps extends HTMLBaseElement {}
+export interface MenuProps {}
