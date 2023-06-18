@@ -1,4 +1,4 @@
-name: "Frontend Tests"
+name: "Pull Request CI Workflows"
 on:
   pull_request:
     types: [opened, synchronize]
@@ -42,3 +42,24 @@ jobs:
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+  chromatic-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install dependencies
+        run: yarn
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+  type-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+      - name: Install dependencies
+        run: yarn
+      - name: TypeScript Error Reporter
+        uses: andoshin11/typescript-error-reporter-action@v1.0.2
