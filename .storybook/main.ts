@@ -40,5 +40,6 @@ const config: StorybookConfig = {
 
     return mergeConfig(config, tmpConfig);
   },
+  staticDirs: ["../public"],
 };
 export default config;

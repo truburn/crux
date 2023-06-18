@@ -5484,7 +5484,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:7.0.22, @storybook/manager-api@npm:^7.0.12":
+"@storybook/manager-api@npm:7.0.22, @storybook/manager-api@npm:^7.0.12, @storybook/manager-api@npm:^7.0.22":
   version: 7.0.22
   resolution: "@storybook/manager-api@npm:7.0.22"
   dependencies:
@@ -5783,7 +5783,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:7.0.22, @storybook/theming@npm:^7.0.12":
+"@storybook/theming@npm:7.0.22, @storybook/theming@npm:^7.0.12, @storybook/theming@npm:^7.0.22":
   version: 7.0.22
   resolution: "@storybook/theming@npm:7.0.22"
   dependencies:
@@ -8161,10 +8161,12 @@ __metadata:
     "@storybook/addon-styling": ^1.3.0
     "@storybook/blocks": 7.0.21
     "@storybook/jest": ^0.1.0
+    "@storybook/manager-api": ^7.0.22
     "@storybook/react": 7.0.21
     "@storybook/react-vite": 7.0.21
     "@storybook/test-runner": next
     "@storybook/testing-library": 0.0.14-next.2
+    "@storybook/theming": ^7.0.22
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^14.0.0
     "@types/node": ^20.3.1
