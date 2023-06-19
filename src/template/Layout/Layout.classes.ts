@@ -10,5 +10,9 @@ export function useLayoutClasses() {
     borderColor: theme.color,
   });
 
-  return { root };
+  const content = css({
+    flex: 1,
+  });
+
+  return { root, content };
 }

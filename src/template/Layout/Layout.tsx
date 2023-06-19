@@ -1,15 +1,18 @@
-import { useEffect } from "react";
-import { useLayoutClasses, LayoutProps } from "@/template/Layout";
+import { useLayoutClasses } from "@/template/Layout";
+import { Footer } from "@/template/Footer";
+import { Header } from "@/template/Header";
 
 /**
  * Site Layout Wrapper
  */
-export function Layout(props: LayoutProps) {
+export function Layout() {
   const classes = useLayoutClasses();
 
-  useEffect(() => {
-    console.log("Layout.props", props);
-  }, [props]);
-
-  return <div className={classes.root}>Site Layout Wrapper</div>;
+  return (
+    <>
+      <Header />
+      <div className={classes.content}>Page Content</div>
+      <Footer />
+    </>
+  );
 }

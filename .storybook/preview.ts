@@ -2,7 +2,7 @@ import type { Preview } from "@storybook/react";
 import { withRouter } from "storybook-addon-react-router-v6";
 import { withThemeFromJSXProvider } from "@storybook/addon-styling";
 import { ThemeProvider } from "@emotion/react";
-import { theme } from "../src/theme";
+import { theme, GlobalStyles } from "../src/theme";
 import { withReactQuery } from "./decorators/withReactQuery";
 
 const preview: Preview = {
@@ -20,6 +20,7 @@ const preview: Preview = {
       themes: { theme },
       defaultTheme: "theme",
       Provider: ThemeProvider,
+      GlobalStyles,
     }),
     withRouter,
     withReactQuery,
