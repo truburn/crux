@@ -1,1 +1,1 @@
-export type LoginProps = HTMLBaseElement;
+export interface LoginProps {}

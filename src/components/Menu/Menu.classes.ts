@@ -1,8 +1,13 @@
 import { css } from "@emotion/css";
+import { useTheme } from "@emotion/react";
 
-export function menuClasses() {
+export function useMenuClasses() {
+  const theme = useTheme();
+
   const root = css({
-    border: `solid 1px blue`,
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: theme.color,
   });
 
   return {

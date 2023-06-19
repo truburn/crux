@@ -1,1 +1,1 @@
-export type BlockquoteProps = HTMLBaseElement;
+export interface BlockquoteProps {}

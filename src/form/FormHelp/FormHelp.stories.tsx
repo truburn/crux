@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { FormHelp as FormHelpComponent } from "./FormHelp";
+import { FormHelp as FormHelpComponent } from "@/form/FormHelp";
 
 const meta: Meta<typeof FormHelpComponent> = {
   component: FormHelpComponent,

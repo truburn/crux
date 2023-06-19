@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { FormGroup as FormGroupComponent } from "./FormGroup";
+import { FormGroup as FormGroupComponent } from "@/form/FormGroup";
 
 const meta: Meta<typeof FormGroupComponent> = {
   component: FormGroupComponent,

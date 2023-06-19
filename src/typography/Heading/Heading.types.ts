@@ -1,1 +1,1 @@
-export type HeadingProps = HTMLBaseElement;
+export interface HeadingProps {}

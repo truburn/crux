@@ -1,1 +1,1 @@
-export type RadioProps = HTMLBaseElement;
+export interface RadioProps {}

@@ -1,1 +1,1 @@
-export type IconProps = HTMLBaseElement;
+export interface IconProps {}

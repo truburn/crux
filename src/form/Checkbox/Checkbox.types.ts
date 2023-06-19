@@ -1,1 +1,1 @@
-export type CheckboxProps = HTMLBaseElement;
+export interface CheckboxProps {}

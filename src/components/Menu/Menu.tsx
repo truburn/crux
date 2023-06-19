@@ -1,15 +1,15 @@
 import { useEffect } from "react";
-import { menuClasses } from "@/components/Menu";
+import { useMenuClasses, MenuProps } from "@/components/Menu";
 
 /**
  * Dropdown menu component
  */
-export function Menu() {
-  const classes = menuClasses();
+export function Menu(props: MenuProps) {
+  const classes = useMenuClasses();
 
   useEffect(() => {
-    console.log(classes);
-  }, [classes]);
+    console.log("Menu.props", props);
+  }, [props]);
 
   return <div className={classes.root}>Dropdown Menu component</div>;
 }

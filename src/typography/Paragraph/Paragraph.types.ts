@@ -1,1 +1,1 @@
-export type ParagraphProps = HTMLBaseElement;
+export interface ParagraphProps {}

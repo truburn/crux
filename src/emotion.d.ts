@@ -1,5 +1,7 @@
 import "@emotion/react";
 
 declare module "@emotion/react" {
-  export interface Theme extends Record<string, unknown> {}
+  export interface Theme {
+    color?: string;
+  }
 }

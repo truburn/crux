@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Placeholder as PlaceholderComponent } from "./Placeholder";
+import { Placeholder as PlaceholderComponent } from "@/components/Placeholder";
 
 const meta: Meta<typeof PlaceholderComponent> = {
   component: PlaceholderComponent,

@@ -1,1 +1,1 @@
-export type ButtonProps = HTMLBaseElement;
+export interface ButtonProps {}

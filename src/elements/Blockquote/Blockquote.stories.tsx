@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Blockquote as BlockquoteComponent } from "./Blockquote";
+import { Blockquote as BlockquoteComponent } from "@/elements/Blockquote";
 
 const meta: Meta<typeof BlockquoteComponent> = {
   component: BlockquoteComponent,

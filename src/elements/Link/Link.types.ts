@@ -1,1 +1,1 @@
-export type LinkProps = HTMLBaseElement;
+export interface LinkProps {}

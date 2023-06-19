@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { FormText as FormTextComponent } from "./FormText";
+import { FormText as FormTextComponent } from "@/form/FormText";
 
 const meta: Meta<typeof FormTextComponent> = {
   component: FormTextComponent,

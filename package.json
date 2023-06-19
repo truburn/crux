@@ -16,7 +16,6 @@
     "chromatic": "chromatic --exit-zero-on-changes"
   },
   "dependencies": {
-    "@emotion/css": "^11.11.2",
     "@emotion/react": "^11.11.1",
     "formik": "^2.4.2",
     "react": "^18.2.0",
@@ -26,6 +25,7 @@
     "react-router-dom": "^6.13.0"
   },
   "devDependencies": {
+    "@emotion/css": "^11.11.2",
     "@emotion/eslint-plugin": "^11.11.0",
     "@emotion/jest": "^11.11.0",
     "@storybook/addon-a11y": "^7.0.21",
