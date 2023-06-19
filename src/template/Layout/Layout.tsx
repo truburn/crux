@@ -1,6 +1,9 @@
+import { Outlet } from "react-router-dom";
 import { useLayoutClasses } from "@/template/Layout";
 import { Footer } from "@/template/Footer";
 import { Header } from "@/template/Header";
+import { Navigation } from "@/template/Navigation";
+import { Container } from "@/elements/Container";
 
 /**
  * Site Layout Wrapper
@@ -11,7 +14,12 @@ export function Layout() {
   return (
     <>
       <Header />
-      <div className={classes.content}>Page Content</div>
+      <Container className={classes.wrapper}>
+        <Navigation />
+        <Container className={classes.content}>
+          <Outlet />
+        </Container>
+      </Container>
       <Footer />
     </>
   );
