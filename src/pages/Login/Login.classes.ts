@@ -1,1 +1,14 @@
-export function loginClasses() {}
+import { css } from "@emotion/css";
+import { useTheme } from "@emotion/react";
+
+export function useLoginClasses() {
+  const theme = useTheme();
+
+  const root = css({
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: theme.color,
+  });
+
+  return { root };
+}

@@ -1,1 +1,1 @@
-export interface DashboardProps extends HTMLBaseElement {}
+export interface DashboardProps {}

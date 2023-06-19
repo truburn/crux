@@ -1,1 +1,1 @@
-export interface NavProps extends HTMLBaseElement {}
+export interface NavigationProps {}

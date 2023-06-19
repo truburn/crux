@@ -1,1 +1,1 @@
-export interface LoginProps extends HTMLBaseElement {}
+export interface LoginProps {}

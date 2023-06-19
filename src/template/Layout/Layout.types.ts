@@ -1,1 +1,1 @@
-export interface LayoutProps extends HTMLBaseElement {}
+export interface LayoutProps {}

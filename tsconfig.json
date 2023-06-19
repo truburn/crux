@@ -12,21 +12,14 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@library/*": ["./library/*"],
-      "@components/*": ["./library/components/*"],
-      "@elements/*": ["./library/elements/*"],
-      "@form/*": ["./library/form/*"],
-      "@typography/*": ["./library/typography/*"],
-      "@pages/*": ["./pages/*"],
-      "@template/*": ["./template/*"],
-      "@utils/*": ["./utils/*"],
-      "@theme/*": ["./theme/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src"],
