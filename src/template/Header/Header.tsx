@@ -1,15 +1,19 @@
-import { useEffect } from "react";
-import { useHeaderClasses, HeaderProps } from "@/template/Header";
+import { useHeaderClasses } from "@/template/Header";
+import { Container } from "@/elements/Container";
+import CruxKey from "@/assets/Crux_Key.png";
 
 /**
  * Site Header
  */
-export function Header(props: HeaderProps) {
+export function Header() {
   const classes = useHeaderClasses();
 
-  useEffect(() => {
-    console.log("Header.props", props);
-  }, [props]);
-
-  return <div className={classes.root}>Site Header</div>;
+  return (
+    <header className={classes.root}>
+      <Container className={classes.titleImage}>
+        <img src={CruxKey} className={classes.logo} />
+        Crux Component Library
+      </Container>
+    </header>
+  );
 }
