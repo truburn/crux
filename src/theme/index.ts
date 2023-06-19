@@ -1,5 +1,3 @@
+export * from "./themeStyles";
 export * from "./GlobalStyles";
-
-export const theme = {
-  color: "blue",
-};
+export * from "./types";

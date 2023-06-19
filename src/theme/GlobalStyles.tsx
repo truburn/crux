@@ -1,4 +1,9 @@
 import { Global, useTheme, css } from "@emotion/react";
+import { injectGlobal } from "@emotion/css";
+
+injectGlobal`
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+`;
 
 function useGlobalStyles() {
   const theme = useTheme();
@@ -10,6 +15,7 @@ function useGlobalStyles() {
       margin: 0,
       padding: 0,
       overflow: "hidden",
+      ...theme.fonts?.body,
     },
     "body > #root, body > #storybook-root": {
       width: "100vw",
@@ -21,9 +27,9 @@ function useGlobalStyles() {
       flexDirection: "column",
       alignItems: "stretch",
       justifyContent: "space-between",
-      borderStyle: "dotted",
-      borderWidth: 1,
-      borderColor: theme.color,
+    },
+    "*": {
+      ...theme.fonts?.body,
     },
   });
 }
