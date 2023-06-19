@@ -3,7 +3,6 @@ import { Container as ContainerComponent } from "@/elements/Container";
 
 const meta: Meta<typeof ContainerComponent> = {
   component: ContainerComponent,
-  tags: ["autodocs"],
 };
 export default meta;
 
