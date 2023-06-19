@@ -1,6 +1,6 @@
 import React from "react";
 import { addons } from "@storybook/manager-api";
-import { themes } from "@storybook/theming";
+import theme from "./theme";
 
 addons.setConfig({
   sidebar: {
@@ -23,5 +23,5 @@ addons.setConfig({
       return <>{item.name}</>;
     },
   },
-  theme: themes.light,
+  theme: theme,
 });
