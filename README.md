@@ -1,7 +1,9 @@
 # crux
+
 Component library built in react and vite
 
 Dependencies:
+
 - React 18.2.0
 - Vite 4.3.9
 - Storybook 7.0.22
@@ -16,6 +18,7 @@ Dependencies:
 - Prettier 2.8.8
 
 CI Workflow includes:
+
 - Storybook test runner with accessibility testing
 - Jest test runner
 - Code coverage on the above tests
