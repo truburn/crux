@@ -11,7 +11,7 @@ export function Header() {
   return (
     <header className={classes.root}>
       <Container className={classes.titleImage}>
-        <img src={CruxKey} className={classes.logo} />
+        <img src={CruxKey} className={classes.logo} alt="Logo image" />
         Crux Component Library
       </Container>
     </header>
