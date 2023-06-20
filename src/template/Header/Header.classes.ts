@@ -11,7 +11,7 @@ export function useHeaderClasses() {
     justifyContent: "space-between",
     maxHeight: "3rem",
     overflow: "hidden",
-    borderBottom: "solid 1px",
+    borderBottom: "solid 1px rgba(0,0,0,0.25)",
   });
 
   const titleImage = css({
