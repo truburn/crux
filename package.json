@@ -13,7 +13,7 @@
     "test-storybook": "test-storybook --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "chromatic --exit-zero-on-changes"
+    "chromatic": "chromatic --only-changed"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
