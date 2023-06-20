@@ -1,15 +1,15 @@
-import { useEffect } from "react";
-import { useFooterClasses, FooterProps } from "@/template/Footer";
+import { useFooterClasses } from "@/template/Footer";
 
 /**
  * Site Footer
  */
-export function Footer(props: FooterProps) {
+export function Footer() {
   const classes = useFooterClasses();
 
-  useEffect(() => {
-    console.log("Footer.props", props);
-  }, [props]);
-
-  return <div className={classes.root}>Site Footer</div>;
+  return (
+    <footer className={classes.root}>
+      <p>Crux Boiler Plate Components</p>
+      <p>&copy; 2023</p>
+    </footer>
+  );
 }
