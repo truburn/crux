@@ -15,16 +15,16 @@ jobs:
         with:
           node-version: "16.x"
       - name: Install dependencies
-        run: yarn
+        run: npm install
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Build Storybook
-        run: yarn build-storybook --quiet
+        run: npm run build-storybook --quiet
       - name: Serve Storybook and run tests
         run: |
           npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
             "npx http-server storybook-static --port 6006 --silent" \
-            "npx wait-on tcp:6006 && yarn test-storybook"
+            "npx wait-on tcp:6006 && npm run test-storybook"
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         env:
@@ -38,9 +38,9 @@ jobs:
         with:
           node-version: "16.x"
       - name: Install dependencies
-        run: yarn
+        run: npm install
       - name: Run the jest tests with coverage
-        run: yarn test
+        run: npm test
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         env:
@@ -50,7 +50,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install dependencies
-        run: yarn
+        run: npm install
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         with:
@@ -64,7 +64,7 @@ jobs:
         with:
           node-version: "16.x"
       - name: Install dependencies
-        run: yarn install
+        run: npm install
       - name: Look for Typescript errors
         run: yarn tsc
   prettier:
@@ -75,7 +75,7 @@ jobs:
         with:
           node-version: "16.x"
       - name: Install dependencies
-        run: yarn install
+        run: npm install
       - name: Check Prettier
         run: npx prettier --check .
   lint:
@@ -86,6 +86,6 @@ jobs:
         with:
           node-version: "16.x"
       - name: Install dependendencies
-        run: yarn install
+        run: npm install
       - name: Check Lint
-        run: yarn lint
+        run: npm run lint
