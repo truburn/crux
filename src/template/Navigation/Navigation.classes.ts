@@ -9,7 +9,7 @@ export function useNavigationClasses() {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-start",
-    padding: "1rem 0.25rem",
+    padding: "0.125rem 0.25rem",
     borderStyle: "solid",
     borderWidth: 0,
     borderRightWidth: theme.seperator.width,
@@ -18,7 +18,16 @@ export function useNavigationClasses() {
 
   const link = css({
     margin: "0.5rem 0",
+    opacity: 0.5,
+    "&:hover": {
+      textDecoration: "none",
+      opacity: 1,
+    },
   });
 
-  return { root, link };
+  const icon = css({
+    fontSize: "2rem",
+  });
+
+  return { root, link, icon };
 }
