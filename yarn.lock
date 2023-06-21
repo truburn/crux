@@ -2306,6 +2306,106 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/fontawesome-common-types@npm:6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/fontawesome-common-types@npm:6.4.0"
+  checksum: a9b79136caa615352bd921cfe2710516321b402cd76c3f0ae68e579a7e3d7645c5a5c0ecd7516c0b207adeeffd1d2174978638d8c0d3c8c937d66fca4f2ff556
+  languageName: node
+  linkType: hard
+
+"@fortawesome/fontawesome-svg-core@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/fontawesome-svg-core@npm:6.4.0"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: 5d4e6c15f814f5ce29053b666d0c7d194dc8ba173d128a38cc5856403a09d4e817e54956d30ed8d48d621f2f5ebcc71756f4e8fe5c5a091c636fc728fcb2362b
+  languageName: node
+  linkType: hard
+
+"@fortawesome/pro-duotone-svg-icons@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/pro-duotone-svg-icons@npm:6.4.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fpro-duotone-svg-icons%2F-%2F6.4.0%2Fpro-duotone-svg-icons-6.4.0.tgz"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: 8529e2b408e781a0507c02545962ca3a49baa0050e786005e288d26889349cefe939b902abed4559f2e13d575a0c4cc1ffa201f21461640bd97fc7299a7022ed
+  languageName: node
+  linkType: hard
+
+"@fortawesome/pro-light-svg-icons@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/pro-light-svg-icons@npm:6.4.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fpro-light-svg-icons%2F-%2F6.4.0%2Fpro-light-svg-icons-6.4.0.tgz"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: 04d87204109629f3735b6d54ecb13af5617d2cb965aed0c3849fa0abf5a55e86b04c198f484a64d81d18b52b29867b78638279178c63de046e8aa69f6c9adf82
+  languageName: node
+  linkType: hard
+
+"@fortawesome/pro-regular-svg-icons@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/pro-regular-svg-icons@npm:6.4.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fpro-regular-svg-icons%2F-%2F6.4.0%2Fpro-regular-svg-icons-6.4.0.tgz"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: 2f1e795aafd9c9a010c4a028a5832b94cf097b44b55b08f9c35b103af750ca700267ecfa826e3c4358f75af209fddcdd0221759f7d1457a21ce81f587069963b
+  languageName: node
+  linkType: hard
+
+"@fortawesome/pro-solid-svg-icons@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/pro-solid-svg-icons@npm:6.4.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fpro-solid-svg-icons%2F-%2F6.4.0%2Fpro-solid-svg-icons-6.4.0.tgz"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: f30e6573528355c6238ba96801bf2eaa9b0221b5e2d70e99b0874dd946e8e8bd2e193ff8cd6bc966d741264162fca1f606b458b611bd262e61d49b6679d44b3a
+  languageName: node
+  linkType: hard
+
+"@fortawesome/pro-thin-svg-icons@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/pro-thin-svg-icons@npm:6.4.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fpro-thin-svg-icons%2F-%2F6.4.0%2Fpro-thin-svg-icons-6.4.0.tgz"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: c08a4bac7c00a50274ae49694a881bf05f35c6f3a5cd0063c5b911b25345b796bb138c0153bf1073a8720a0e674efb20ca9ef7a85be0441fa23e99afd92ecae5
+  languageName: node
+  linkType: hard
+
+"@fortawesome/react-fontawesome@npm:latest":
+  version: 0.2.0
+  resolution: "@fortawesome/react-fontawesome@npm:0.2.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Freact-fontawesome%2F-%2F0.2.0%2Freact-fontawesome-0.2.0.tgz"
+  dependencies:
+    prop-types: ^15.8.1
+  peerDependencies:
+    "@fortawesome/fontawesome-svg-core": ~1 || ~6
+    react: ">=16.3"
+  checksum: f652a0c2172e7b209e2d9e7e511f9b8c17abad85f55e0bd09bb1175ea1927693215da47eb6cd95b1f3a23bd124368553c677907fa76cb17c5093afc1fcffe338
+  languageName: node
+  linkType: hard
+
+"@fortawesome/sharp-light-svg-icons@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/sharp-light-svg-icons@npm:6.4.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fsharp-light-svg-icons%2F-%2F6.4.0%2Fsharp-light-svg-icons-6.4.0.tgz"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: e66779119ff64980816937c5f214dc43620691e5c5830d70542a9ec68f0c3c235daf7926d737fc7c5aee73a01d9b7bb1fac398156223dc45919a2f2ce10e29b7
+  languageName: node
+  linkType: hard
+
+"@fortawesome/sharp-regular-svg-icons@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/sharp-regular-svg-icons@npm:6.4.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fsharp-regular-svg-icons%2F-%2F6.4.0%2Fsharp-regular-svg-icons-6.4.0.tgz"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: 33700d2477e3310c5e0a2d97a7ad63ec5086a153e87fa14d1a777c7786f442416953a589fcbcda227e52984c6c8f94d0dd894ee447bf8d1cc2cca0626ccaae25
+  languageName: node
+  linkType: hard
+
+"@fortawesome/sharp-solid-svg-icons@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@fortawesome/sharp-solid-svg-icons@npm:6.4.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fsharp-solid-svg-icons%2F-%2F6.4.0%2Fsharp-solid-svg-icons-6.4.0.tgz"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": 6.4.0
+  checksum: d4bcd4965ac9bb9ebcb4c707d5c34fc0d14fc273f820e5a406dd8b59e47573ec6dfa4cbf31351145dfcf77f2e52fa717f9c6e801ad24374d6e6ac0a66250c540
+  languageName: node
+  linkType: hard
+
 "@hapi/hoek@npm:^9.0.0":
   version: 9.3.0
   resolution: "@hapi/hoek@npm:9.3.0"
@@ -8220,6 +8320,16 @@ __metadata:
     "@emotion/eslint-plugin": ^11.11.0
     "@emotion/jest": ^11.11.0
     "@emotion/react": ^11.11.1
+    "@fortawesome/fontawesome-svg-core": ^6.4.0
+    "@fortawesome/pro-duotone-svg-icons": ^6.4.0
+    "@fortawesome/pro-light-svg-icons": ^6.4.0
+    "@fortawesome/pro-regular-svg-icons": ^6.4.0
+    "@fortawesome/pro-solid-svg-icons": ^6.4.0
+    "@fortawesome/pro-thin-svg-icons": ^6.4.0
+    "@fortawesome/react-fontawesome": latest
+    "@fortawesome/sharp-light-svg-icons": ^6.4.0
+    "@fortawesome/sharp-regular-svg-icons": ^6.4.0
+    "@fortawesome/sharp-solid-svg-icons": ^6.4.0
     "@storybook/addon-a11y": ^7.0.21
     "@storybook/addon-coverage": ^0.0.8
     "@storybook/addon-essentials": 7.0.21
