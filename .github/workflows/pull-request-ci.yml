@@ -16,9 +16,9 @@ jobs:
           node-version: "16.x"
       - name: Setup .yarnrc.yml
         run: |
-          yarn config set npmScopes.fortAwesome.npmRegistryServer "https://npm.fontawesome.com"
-          yarn config set npmScopes.fortAwesome.npmAlwaysAuth true
-          yarn config set npmScopes.fortAwesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
+          yarn config set npmScopes.fortawesome.npmRegistryServer "https://npm.fontawesome.com"
+          yarn config set npmScopes.fortawesome.npmAlwaysAuth true
+          yarn config set npmScopes.fortawesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
       - name: Install dependencies
         run: yarn install --immutable
       - name: Install Playwright
@@ -44,9 +44,9 @@ jobs:
           node-version: "16.x"
       - name: Setup .yarnrc.yml
         run: |
-          yarn config set npmScopes.fortAwesome.npmRegistryServer "https://npm.fontawesome.com"
-          yarn config set npmScopes.fortAwesome.npmAlwaysAuth true
-          yarn config set npmScopes.fortAwesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
+          yarn config set npmScopes.fortawesome.npmRegistryServer "https://npm.fontawesome.com"
+          yarn config set npmScopes.fortawesome.npmAlwaysAuth true
+          yarn config set npmScopes.fortawesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
       - name: Install dependencies
         run: yarn install --immutable
       - name: Run the jest tests with coverage
@@ -61,9 +61,9 @@ jobs:
       - uses: actions/checkout@v1
       - name: Setup .yarnrc.yml
         run: |
-          yarn config set npmScopes.fortAwesome.npmRegistryServer "https://npm.fontawesome.com"
-          yarn config set npmScopes.fortAwesome.npmAlwaysAuth true
-          yarn config set npmScopes.fortAwesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
+          yarn config set npmScopes.fortawesome.npmRegistryServer "https://npm.fontawesome.com"
+          yarn config set npmScopes.fortawesome.npmAlwaysAuth true
+          yarn config set npmScopes.fortawesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
       - name: Install dependencies
         run: yarn install --immutable
       - name: Publish to Chromatic
@@ -79,9 +79,9 @@ jobs:
           node-version: "16.x"
       - name: Setup .yarnrc.yml
         run: |
-          yarn config set npmScopes.fortAwesome.npmRegistryServer "https://npm.fontawesome.com"
-          yarn config set npmScopes.fortAwesome.npmAlwaysAuth true
-          yarn config set npmScopes.fortAwesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
+          yarn config set npmScopes.fortawesome.npmRegistryServer "https://npm.fontawesome.com"
+          yarn config set npmScopes.fortawesome.npmAlwaysAuth true
+          yarn config set npmScopes.fortawesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
       - name: Install dependencies
         run: yarn install --immutable
       - name: Look for Typescript errors
@@ -95,9 +95,9 @@ jobs:
           node-version: "16.x"
       - name: Setup .yarnrc.yml
         run: |
-          yarn config set npmScopes.fortAwesome.npmRegistryServer "https://npm.fontawesome.com"
-          yarn config set npmScopes.fortAwesome.npmAlwaysAuth true
-          yarn config set npmScopes.fortAwesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
+          yarn config set npmScopes.fortawesome.npmRegistryServer "https://npm.fontawesome.com"
+          yarn config set npmScopes.fortawesome.npmAlwaysAuth true
+          yarn config set npmScopes.fortawesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
       - name: Install dependencies
         run: yarn install --immutable
       - name: Check Prettier
@@ -111,9 +111,9 @@ jobs:
           node-version: "16.x"
       - name: Setup .yarnrc.yml
         run: |
-          yarn config set npmScopes.fortAwesome.npmRegistryServer "https://npm.fontawesome.com"
-          yarn config set npmScopes.fortAwesome.npmAlwaysAuth true
-          yarn config set npmScopes.fortAwesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
+          yarn config set npmScopes.fortawesome.npmRegistryServer "https://npm.fontawesome.com"
+          yarn config set npmScopes.fortawesome.npmAlwaysAuth true
+          yarn config set npmScopes.fortawesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
       - name: Install dependencies
         run: yarn install --immutable
       - name: Check Lint
