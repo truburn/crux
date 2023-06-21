@@ -1,15 +1,23 @@
-import { useEffect } from "react";
-import { useNavigationClasses, NavigationProps } from "@/template/Navigation";
+import { NavLink } from "react-router-dom";
+import { useNavigationClasses } from "@/template/Navigation";
 
 /**
  * Site Navigation
  */
-export function Navigation(props: NavigationProps) {
+export function Navigation() {
   const classes = useNavigationClasses();
 
-  useEffect(() => {
-    console.log("Navigation.props", props);
-  }, [props]);
-
-  return <div className={classes.root}>Site Navigation</div>;
+  return (
+    <nav className={classes.root}>
+      <NavLink className={classes.link} to="/" title="Home Page">
+        Home
+      </NavLink>
+      <NavLink className={classes.link} to="/login" title="Login">
+        Login
+      </NavLink>
+      <NavLink className={classes.link} to="/dashboard" title="Dashboard">
+        Dashboard
+      </NavLink>
+    </nav>
+  );
 }

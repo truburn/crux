@@ -5,10 +5,20 @@ export function useNavigationClasses() {
   const theme = useTheme();
 
   const root = css({
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    padding: "1rem 0.25rem",
     borderStyle: "solid",
-    borderWidth: 1,
-    borderColor: theme.color,
+    borderWidth: 0,
+    borderRightWidth: theme.seperator.width,
+    borderColor: theme.seperator.color,
   });
 
-  return { root };
+  const link = css({
+    margin: "0.5rem 0",
+  });
+
+  return { root, link };
 }
