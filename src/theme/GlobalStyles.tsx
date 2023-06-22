@@ -31,6 +31,14 @@ function useGlobalStyles() {
     "*": {
       ...theme.fonts?.body,
     },
+    a: {
+      fontWeight: "bold",
+      textDecoration: "none",
+      transition: "ease all 0.5s",
+      "&:hover": {
+        textDecoration: "underline",
+      },
+    },
   });
 }
 
