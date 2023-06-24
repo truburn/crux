@@ -27,6 +27,7 @@
     "@fortawesome/sharp-light-svg-icons": "^6.4.0",
     "@fortawesome/sharp-regular-svg-icons": "^6.4.0",
     "@fortawesome/sharp-solid-svg-icons": "^6.4.0",
+    "chroma-js": "^2.4.2",
     "formik": "^2.4.2",
     "react": "^18.2.0",
     "react-aria": "^3.25.0",

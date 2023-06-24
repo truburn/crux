@@ -1,3 +1,5 @@
+import { colorVariations } from "@/theme/color";
+
 const fontFamilies = {
   Quicksand: {
     family: `'Quicksand', sans-serif`,
@@ -11,8 +13,20 @@ const fontFamilies = {
   },
 };
 
+const colors = {
+  primary: colorVariations("#c20022"),
+  secondary: colorVariations("#234875"),
+  background: colorVariations("#e0f1ff"),
+  text: colorVariations("#2f4858"),
+  error: colorVariations("#ec2626"),
+  warning: colorVariations("#ec8026"),
+  success: colorVariations("#1ebc1e"),
+  info: colorVariations("#178d8d"),
+};
+
 export const theme = {
   color: "blue", // temporary for setup
+  colors,
   fonts: {
     body: {
       fontFamily: fontFamilies.Quicksand.family,

@@ -9,7 +9,7 @@ export function useFooterClasses() {
     borderStyle: "solid",
     borderWidth: 0,
     borderTopWidth: 1,
-    borderColor: theme.seperator.color,
+    borderColor: theme.separator.color,
     display: "flex",
     flexDirection: "row",
     alignItems: "flex-end",

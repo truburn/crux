@@ -15,7 +15,9 @@ function useGlobalStyles() {
       margin: 0,
       padding: 0,
       overflow: "hidden",
-      ...theme.fonts?.body,
+      ...theme.fonts.body,
+      background: theme.colors.background.main,
+      color: theme.colors.text.main,
     },
     "body > #root, body > #storybook-root": {
       width: "100vw",
@@ -29,10 +31,10 @@ function useGlobalStyles() {
       justifyContent: "space-between",
     },
     "*": {
-      ...theme.fonts?.body,
+      ...theme.fonts.body,
     },
     a: {
-      fontWeight: "bold",
+      fontWeight: theme.fontFamilies.Quicksand.weights.bold,
       textDecoration: "none",
       transition: "ease all 0.5s",
       "&:hover": {

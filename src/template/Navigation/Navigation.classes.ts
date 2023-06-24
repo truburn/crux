@@ -12,8 +12,8 @@ export function useNavigationClasses() {
     padding: "0.125rem 0.25rem",
     borderStyle: "solid",
     borderWidth: 0,
-    borderRightWidth: theme.seperator.width,
-    borderColor: theme.seperator.color,
+    borderRightWidth: theme.separator.width,
+    borderColor: theme.separator.color,
   });
 
   const link = css({
