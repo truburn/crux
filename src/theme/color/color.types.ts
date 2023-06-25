@@ -10,3 +10,14 @@ export interface ColorVariations {
   light: string;
   border: string;
 }
+
+export enum ColorNames {
+  PRIMARY = "primary",
+  SECONDARY = "secondary",
+  BACKGROUND = "background",
+  TEXT = "text",
+  ERROR = "error",
+  WARNING = "warning",
+  SUCCESS = "success",
+  INFO = "info",
+}

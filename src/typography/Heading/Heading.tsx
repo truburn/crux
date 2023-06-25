@@ -14,13 +14,15 @@ export function Heading(props: HeadingProps) {
   const classes = useHeadingClasses();
 
   return (
-    <Element className={cx(classes.root, propClasses?.root)}>
-      <span className={cx(classes.title, propClasses?.title)}>{title}</span>
+    <div className={cx(classes.root, propClasses?.root)}>
+      <Element className={cx(classes.title, propClasses?.title)}>
+        {title}
+      </Element>
       {subtitle && (
-        <small className={cx(classes.subtitle, propClasses?.subtitle)}>
+        <div className={cx(classes.subtitle, propClasses?.subtitle)}>
           {subtitle}
-        </small>
+        </div>
       )}
-    </Element>
+    </div>
   );
 }

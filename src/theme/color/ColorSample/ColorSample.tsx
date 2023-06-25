@@ -1,6 +1,86 @@
+import { useEffect, useMemo } from "react";
+import {
+  ColorSampleProps,
+  ColorItem,
+  useColorSampleClasses,
+} from "@/theme/color/ColorSample";
+import { ColorNames } from "@/theme/color";
+import { theme } from "@/theme/themeStyles";
+import { Heading } from "@/typography/Heading";
+
 /**
  * Renders a theme color in multiple variations for use in Storybook MDX stories
  */
-export function ColorSample() {
-  return <div>Color Sample Element</div>;
+export function ColorSample(props: ColorSampleProps) {
+  const { colorList } = props;
+  const classes = useColorSampleClasses();
+
+  const colors = useMemo<ColorItem[]>(() => {
+    return Object.entries(theme.colors)
+      .filter(([name]) => {
+        if (!colorList) return true;
+        return colorList.includes(name as ColorNames);
+      })
+      .map(([name, color]) => {
+        const childColors = Object.entries(color)
+          .filter(([colorName]) => colorName !== "chromaColor")
+          .map(([colorName, colorHex]) => ({
+            name: colorName,
+            color: colorHex,
+          }));
+
+        return {
+          name,
+          color: color.main,
+          variations: childColors,
+        };
+      });
+  }, [colorList]);
+
+  useEffect(() => {
+    console.log({ props, colors });
+  }, [props, colors]);
+
+  return (
+    <div className={classes.root}>
+      {colors.map((color) => (
+        <div key={color.name} className={classes.item}>
+          <Heading
+            title={color.name}
+            subtitle={
+              <>
+                {color.color}
+                <div
+                  className={classes.subtitleColorBlock}
+                  style={{ background: color.color }}
+                />
+              </>
+            }
+            classes={{
+              root: classes.itemHeading,
+              title: classes.title,
+              subtitle: classes.subtitle,
+            }}
+          />
+          <div className={classes.colorBlocks}>
+            {color.variations.map((variation) => (
+              <div
+                key={[color.name, variation.name].join("-")}
+                className={classes.block}
+              >
+                <div
+                  className={classes.blockColor}
+                  style={{ background: variation.color }}
+                />
+                <div className={classes.blockInfo}>
+                  <span>{variation.name}</span>
+                  <span>{variation.color}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }

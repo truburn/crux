@@ -6,7 +6,7 @@ export function useHeadingClasses() {
     ...theme.fonts.heading,
     margin: "1.125rem 0",
     padding: "0 0.5rem",
-    color: theme.colors.primary.main,
+    color: theme.colors.text.main,
     "&:first-of-type": {
       marginTop: 0,
     },
@@ -14,10 +14,7 @@ export function useHeadingClasses() {
 
   const title = css({});
 
-  const subtitle = css({
-    fontSize: "0.75em",
-    display: "block",
-  });
+  const subtitle = css({});
 
   return {
     root,

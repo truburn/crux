@@ -1,6 +1,7 @@
+import { ReactNode } from "react";
 export interface HeadingProps {
-  title: string;
-  subtitle?: string;
+  title: ReactNode;
+  subtitle?: ReactNode;
   classes?: {
     root?: string;
     title?: string;

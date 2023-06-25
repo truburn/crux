@@ -38,7 +38,7 @@ export const theme = {
     },
   },
   fontFamilies,
-  seperator: {
+  separator: {
     width: 1,
     color: "rgba(0, 0, 0, 0.25)",
   },

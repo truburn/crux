@@ -4,16 +4,21 @@ import { ColorVariations } from "@/theme/color";
 export const colorVariations = (color: string): ColorVariations => {
   const chromaColor = chroma(color);
   const isLight = chromaColor.luminance() > 0.5;
-  const contrast = isLight
-    ? chromaColor.desaturate(4)
-    : chromaColor.saturate(4);
+  const dark = chromaColor.darken(2);
+  const light = chromaColor.brighten(2).desaturate(0.5);
 
   return {
     chromaColor,
     main: chromaColor.hex(),
-    contrast: contrast.hex(),
-    dark: chromaColor.desaturate(2).hex(),
-    light: chromaColor.saturate(2).hex(),
-    border: contrast.desaturate(3).hex(),
+    contrast: (isLight
+      ? chromaColor.darken(4)
+      : chromaColor.brighten(4).desaturate(0.5)
+    ).hex(),
+    dark: dark.hex(),
+    light: light.hex(),
+    border: (isLight
+      ? chromaColor.darken(2).desaturate(0.5)
+      : chromaColor.brighten(4).desaturate(0.5)
+    ).hex(),
   };
 };
