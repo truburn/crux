@@ -1,14 +1,27 @@
 import { css } from "@emotion/css";
-import { useTheme } from "@emotion/react";
+import { theme } from "@/theme";
 
 export function useHeadingClasses() {
-  const theme = useTheme();
-
   const root = css({
-    borderStyle: "solid",
-    borderWidth: 1,
-    borderColor: theme.color,
+    ...theme.fonts.heading,
+    margin: "1.125rem 0",
+    padding: "0 0.5rem",
+    color: theme.colors.primary.main,
+    "&:first-of-type": {
+      marginTop: 0,
+    },
   });
 
-  return { root };
+  const title = css({});
+
+  const subtitle = css({
+    fontSize: "0.75em",
+    display: "block",
+  });
+
+  return {
+    root,
+    title,
+    subtitle,
+  };
 }
