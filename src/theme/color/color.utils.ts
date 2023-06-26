@@ -16,9 +16,6 @@ export const colorVariations = (color: string): ColorVariations => {
     ).hex(),
     dark: dark.hex(),
     light: light.hex(),
-    border: (isLight
-      ? chromaColor.darken(2).desaturate(0.5)
-      : chromaColor.brighten(4).desaturate(0.5)
-    ).hex(),
+    border: chromaColor.darken(1).desaturate(0.25).hex(),
   };
 };

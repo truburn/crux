@@ -1,8 +1,9 @@
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import {
   ColorSampleProps,
   ColorItem,
   useColorSampleClasses,
+  ColorTable,
 } from "@/theme/color/ColorSample";
 import { ColorNames } from "@/theme/color";
 import { theme } from "@/theme/themeStyles";
@@ -12,7 +13,7 @@ import { Heading } from "@/typography/Heading";
  * Renders a theme color in multiple variations for use in Storybook MDX stories
  */
 export function ColorSample(props: ColorSampleProps) {
-  const { colorList } = props;
+  const { colorList, showDetails } = props;
   const classes = useColorSampleClasses();
 
   const colors = useMemo<ColorItem[]>(() => {
@@ -37,12 +38,22 @@ export function ColorSample(props: ColorSampleProps) {
       });
   }, [colorList]);
 
-  useEffect(() => {
-    console.log({ props, colors });
-  }, [props, colors]);
-
   return (
     <div className={classes.root}>
+      <div className={classes.colorBlocks}>
+        {colors.map((color) => (
+          <div key={color.name} className={classes.block}>
+            <div
+              className={classes.blockColor}
+              style={{ background: color.color }}
+            />
+            <div className={classes.blockInfo}>
+              <span>{color.name}</span>
+              <span>{color.color}</span>
+            </div>
+          </div>
+        ))}
+      </div>
       {colors.map((color) => (
         <div key={color.name} className={classes.item}>
           <Heading
@@ -62,6 +73,9 @@ export function ColorSample(props: ColorSampleProps) {
               subtitle: classes.subtitle,
             }}
           />
+          <p
+            className={classes.variable}
+          >{`theme.colors.${color.name}.{VARIATION}`}</p>
           <div className={classes.colorBlocks}>
             {color.variations.map((variation) => (
               <div
@@ -79,6 +93,7 @@ export function ColorSample(props: ColorSampleProps) {
               </div>
             ))}
           </div>
+          {showDetails && <ColorTable {...color} />}
         </div>
       ))}
     </div>

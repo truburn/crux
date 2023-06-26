@@ -7,6 +7,14 @@ const meta: Meta<typeof ColorSampleComponent> = {
   title: "theme/Story Blocks/Color Sample",
   parameters: {
     layout: "fullscreen",
+    a11y: {
+      config: {
+        rules: [{ id: "color-contrast", enabled: false }],
+      },
+    },
+  },
+  args: {
+    showDetails: true,
   },
   argTypes: {
     colorList: {
