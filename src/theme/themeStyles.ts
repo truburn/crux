@@ -17,7 +17,7 @@ const fontFamilies = {
 const colors = {
   primary: colorVariations("#671d0f"),
   secondary: colorVariations("#0f5967"),
-  background: colorVariations("#e0f1ff"),
+  background: colorVariations("#e0f6fa"),
   text: colorVariations("#2f4858"),
   error: colorVariations("#eb0502"),
   warning: colorVariations("#ec8026"),

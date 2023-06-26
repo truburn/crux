@@ -1,7 +1,7 @@
 import chroma from "chroma-js";
-import { ColorVariations } from "@/theme/color";
+import { ColorVariations, Color } from "@/theme/color";
 
-export const colorVariations = (color: string): ColorVariations => {
+export function colorVariations(color: string): ColorVariations {
   const chromaColor = chroma(color);
   const isLight = chromaColor.luminance() > 0.5;
   const dark = chromaColor.darken(2);
@@ -18,4 +18,11 @@ export const colorVariations = (color: string): ColorVariations => {
     light: light.hex(),
     border: chromaColor.darken(1).desaturate(0.25).hex(),
   };
-};
+}
+
+export function colorOpacity(color: Color, opacity: number): string {
+  let alphaValue = opacity;
+  if (alphaValue > 1) alphaValue = 1;
+  if (alphaValue < 0) alphaValue = 0;
+  return `rgba(${chroma(color).alpha(alphaValue).rgba().join(", ")})`;
+}
