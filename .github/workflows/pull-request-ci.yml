@@ -66,10 +66,18 @@ jobs:
           yarn config set npmScopes.fortawesome.npmAuthToken "FC53C143-45F1-42B7-8878-34F91F1246A6"
       - name: Install dependencies
         run: yarn install --immutable
-      - name: Publish to Chromatic
+      - name: Publish to Chromatic for review on other branches
+        if: github.ref != 'refs/heads/bloom'
         uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          onlyChanged: true
+      - name: Publish to Chromatic and auto accepts all changes on main branch
+        if: github.ref == 'refs/heads/bloom'
+        uses: chromaui/action@v1
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          autoAcceptChanges: true
   type-check:
     runs-on: ubuntu-latest
     steps:
