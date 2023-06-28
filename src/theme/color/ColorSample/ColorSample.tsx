@@ -13,7 +13,7 @@ import { Heading } from "@/typography/Heading";
  * Renders a theme color in multiple variations for use in Storybook MDX stories
  */
 export function ColorSample(props: ColorSampleProps) {
-  const { colorList, showDetails } = props;
+  const { colorList, showDetails, mainColorsOnly } = props;
   const classes = useColorSampleClasses();
 
   const colors = useMemo<ColorItem[]>(() => {
@@ -54,48 +54,49 @@ export function ColorSample(props: ColorSampleProps) {
           </div>
         ))}
       </div>
-      {colors.map((color) => (
-        <div key={color.name} className={classes.item}>
-          <Heading
-            title={color.name}
-            subtitle={
-              <>
-                {color.color}
+      {!mainColorsOnly &&
+        colors.map((color) => (
+          <div key={color.name} className={classes.item}>
+            <Heading
+              title={color.name}
+              subtitle={
+                <>
+                  {color.color}
+                  <div
+                    className={classes.subtitleColorBlock}
+                    style={{ background: color.color }}
+                  />
+                </>
+              }
+              classes={{
+                root: classes.itemHeading,
+                title: classes.title,
+                subtitle: classes.subtitle,
+              }}
+            />
+            <p
+              className={classes.variable}
+            >{`theme.colors.${color.name}.{VARIATION}`}</p>
+            <div className={classes.colorBlocks}>
+              {color.variations.map((variation) => (
                 <div
-                  className={classes.subtitleColorBlock}
-                  style={{ background: color.color }}
-                />
-              </>
-            }
-            classes={{
-              root: classes.itemHeading,
-              title: classes.title,
-              subtitle: classes.subtitle,
-            }}
-          />
-          <p
-            className={classes.variable}
-          >{`theme.colors.${color.name}.{VARIATION}`}</p>
-          <div className={classes.colorBlocks}>
-            {color.variations.map((variation) => (
-              <div
-                key={[color.name, variation.name].join("-")}
-                className={classes.block}
-              >
-                <div
-                  className={classes.blockColor}
-                  style={{ background: variation.color }}
-                />
-                <div className={classes.blockInfo}>
-                  <span>{variation.name}</span>
-                  <span>{variation.color}</span>
+                  key={[color.name, variation.name].join("-")}
+                  className={classes.block}
+                >
+                  <div
+                    className={classes.blockColor}
+                    style={{ background: variation.color }}
+                  />
+                  <div className={classes.blockInfo}>
+                    <span>{variation.name}</span>
+                    <span>{variation.color}</span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            {showDetails && <ColorTable {...color} />}
           </div>
-          {showDetails && <ColorTable {...color} />}
-        </div>
-      ))}
+        ))}
     </div>
   );
 }
