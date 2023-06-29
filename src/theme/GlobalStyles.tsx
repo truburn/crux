@@ -1,9 +1,11 @@
 import { Global, useTheme, css } from "@emotion/react";
 import { injectGlobal } from "@emotion/css";
+import { useEffect } from "react";
 
 injectGlobal`@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=IBM+Plex+Mono:wght@200;400;700&family=Quicksand:wght@300;400;500;600;700&display=swap');`;
 
-function useGlobalStyles() {
+// eslint-disable-next-line react-refresh/only-export-components
+export function useGlobalStyles() {
   const theme = useTheme();
 
   return css({
@@ -42,6 +44,10 @@ function useGlobalStyles() {
 
 export function GlobalStyles() {
   const globalCSS = useGlobalStyles();
+
+  useEffect(() => {
+    console.log(globalCSS);
+  }, [globalCSS]);
 
   return <Global styles={globalCSS} />;
 }
