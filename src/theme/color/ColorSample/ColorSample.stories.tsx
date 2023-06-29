@@ -4,7 +4,7 @@ import { ColorNames } from "@/theme/color";
 
 const meta: Meta<typeof ColorSampleComponent> = {
   component: ColorSampleComponent,
-  title: "theme/Story Blocks/Color Sample",
+  title: "theme/Color Palette",
   parameters: {
     layout: "fullscreen",
     a11y: {
@@ -15,6 +15,7 @@ const meta: Meta<typeof ColorSampleComponent> = {
   },
   args: {
     showDetails: true,
+    mainColorsOnly: false,
   },
   argTypes: {
     colorList: {
