@@ -3,7 +3,6 @@ import { theme } from "@/theme";
 
 export function useHeadingClasses() {
   const root = css({
-    ...theme.fonts.heading,
     margin: "1.125rem 0",
     padding: "0 0.5rem",
     color: theme.colors.text.main,
@@ -12,9 +11,14 @@ export function useHeadingClasses() {
     },
   });
 
-  const title = css({});
+  const title = css({
+    ...theme.fonts.heading,
+  });
 
-  const subtitle = css({});
+  const subtitle = css({
+    fontFamily: theme.fonts.heading.fontFamily,
+    fontWeight: theme.fontFamilies.heading.weights.light,
+  });
 
   return {
     root,

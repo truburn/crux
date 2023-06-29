@@ -1,9 +1,7 @@
 import { Global, useTheme, css } from "@emotion/react";
 import { injectGlobal } from "@emotion/css";
 
-injectGlobal`
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-`;
+injectGlobal`@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=IBM+Plex+Mono:wght@200;400;700&family=Quicksand:wght@300;400;500;600;700&display=swap');`;
 
 function useGlobalStyles() {
   const theme = useTheme();
@@ -32,7 +30,7 @@ function useGlobalStyles() {
       ...theme.fonts.body,
     },
     a: {
-      fontWeight: theme.fontFamilies.Quicksand.weights.bold,
+      fontWeight: theme.fontFamilies.body.weights.bold,
       textDecoration: "none",
       transition: "ease all 0.5s",
       "&:hover": {

@@ -3,8 +3,16 @@ import { ColorVariations } from "@/theme/color";
 export interface MyTheme {
   color: string;
   colors: Record<string, ColorVariations>;
-  fonts: Record<string, ThemeFont>;
-  fontFamilies: Record<string, FontFamily>;
+  fonts: {
+    body: ThemeFont;
+    heading: ThemeFont;
+    code: ThemeFont;
+  };
+  fontFamilies: {
+    body: FontFamily;
+    heading: FontFamily;
+    code: FontFamily;
+  };
   separator: {
     width: number;
     color: string;

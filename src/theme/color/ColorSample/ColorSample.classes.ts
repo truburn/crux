@@ -54,7 +54,7 @@ export function useColorSampleClasses() {
   });
 
   const variable = css({
-    fontFamily: "monospace !important",
+    ...theme.fonts.code,
     fontSize: "1.125rem !important",
     margin: "1rem",
     padding: "0.5rem 1rem",

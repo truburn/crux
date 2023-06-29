@@ -1,13 +1,29 @@
 import { colorVariations } from "@/theme/color";
+import { Theme } from "@emotion/react";
 
 const fontFamilies = {
-  Quicksand: {
+  body: {
     family: `'Quicksand', sans-serif`,
     weights: {
       light: 300,
       regular: 400,
       medium: 500,
       semiBold: 600,
+      bold: 700,
+    },
+  },
+  heading: {
+    family: `'Comfortaa', cursive`,
+    weights: {
+      light: 300,
+      regular: 700,
+    },
+  },
+  code: {
+    family: `'IBM Plex Mono', monospace`,
+    weights: {
+      light: 200,
+      regular: 400,
       bold: 700,
     },
   },
@@ -25,17 +41,21 @@ const colors = {
   info: colorVariations("#1eb2ce"),
 };
 
-export const theme = {
+export const theme: Theme = {
   color: "blue", // temporary for setup
   colors,
   fonts: {
     body: {
-      fontFamily: fontFamilies.Quicksand.family,
-      fontWeight: fontFamilies.Quicksand.weights.regular,
+      fontFamily: fontFamilies.body.family,
+      fontWeight: fontFamilies.body.weights.regular,
     },
     heading: {
-      fontFamily: fontFamilies.Quicksand.family,
-      fontWeight: fontFamilies.Quicksand.weights.bold,
+      fontFamily: fontFamilies.heading.family,
+      fontWeight: fontFamilies.heading.weights.regular,
+    },
+    code: {
+      fontFamily: fontFamilies.code.family,
+      fontWeight: fontFamilies.code.weights.regular,
     },
   },
   fontFamilies,
