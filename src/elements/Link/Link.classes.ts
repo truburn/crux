@@ -1,14 +1,20 @@
 import { css } from "@emotion/css";
-import { useTheme } from "@emotion/react";
+import { theme } from "@/theme";
 
 export function useLinkClasses() {
-  const theme = useTheme();
-
   const root = css({
-    borderStyle: "solid",
-    borderWidth: 1,
-    borderColor: theme.color,
+    color: theme.colors.primary.main,
+    "&:hover": {
+      color: theme.colors.primary.dark,
+    },
   });
 
-  return { root };
+  const externalIcon = css({
+    fontSize: "0.75em",
+    marginLeft: "1ch",
+    opacity: 0.75,
+    color: "inherit",
+  });
+
+  return { root, externalIcon };
 }
