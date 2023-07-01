@@ -1,4 +1,5 @@
 import { ColorSample } from "@/theme/color/ColorSample";
+import { Link } from "@/elements/Link";
 
 # Theme
 
@@ -6,6 +7,18 @@ These are the theme settings
 
 ## Color Palette
 
-Below are the main colors defined within the theme. They can be used with the theme.colors.[COLOR_NAME].[COLOR_VARIATION] structure. Each color has a different variations that are automatically generated based on the main color. Visit the Color Palette page for more details.
+Below are the main colors defined within the theme. They can be used with the <code>theme.colors.[COLOR_NAME].[COLOR_VARIATION]</code> structure. Each color has a different variations that are automatically generated based on the main color. Visit the Color Palette page for more details.
+
+Color transformation is done using the <Link to="https://gka.github.io/chroma.js" external>chroma.js library</Link>. Each color group also includes a <code>chromaColor</code> property that contains the chroma.js version of the color. All chroma.js methods are available on this color object.
+
+For example, if you would like to change the saturation on the error <code>theme.colors.error.chromaColor.saturation(3).hex()</code> will return the hex string of the transformed color per the <Link to="https://gka.github.io/chroma.js" external>chroma.js documentation</Link>.
 
 <ColorSample mainColorsOnly />
+
+### Color Utilities
+
+<code>colorOpacity(color: string | chroma.Color, opacity: number)</code> will return
+a valid CSS <code>rgba</code> string. The color value should be a hex string, a color
+name, or a chroma color object. The opacity number is the percentage in decimal format
+between 0 and 1. If a number less than 0 is entered, 0 will be used. If a number
+more than 1 is entered, 1 will be used.
