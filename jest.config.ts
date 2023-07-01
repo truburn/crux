@@ -6,7 +6,13 @@ const tsconfig = require(`./tsconfig.json`);
 const config: Config = {
   verbose: true,
   collectCoverage: true,
-  collectCoverageFrom: ["src/**/*.{ts,tsx}", "!src/**/index.ts"],
+  collectCoverageFrom: [
+    "src/**/*.{ts,tsx}",
+    "!src/**/index.ts",
+    "!src/**/*.stories.tsx",
+    "!src/**/*.types.ts",
+    "!src/**/*.classes.ts",
+  ],
   coverageDirectory: "coverage",
   testEnvironment: "jsdom",
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
