@@ -5,6 +5,7 @@ import { ThemeProvider } from "@emotion/react";
 import { theme, GlobalStyles } from "../src/theme";
 import { withReactQuery } from "./decorators/withReactQuery";
 import docsComponents from "./docsComponents";
+import sbTheme from "./theme";
 
 const preview: Preview = {
   parameters: {
@@ -20,6 +21,7 @@ const preview: Preview = {
     },
     docs: {
       components: docsComponents,
+      theme: sbTheme,
     },
   },
   decorators: [

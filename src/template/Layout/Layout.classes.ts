@@ -1,10 +1,8 @@
 import { css } from "@emotion/css";
-// import { useTheme } from "@emotion/react";
+// import { theme } from "@/theme";
 
 export function useLayoutClasses() {
-  // const theme = useTheme();
-
-  const content = css({
+  //   const content = css({
     flex: 1,
     display: "flex",
     flexDirection: "column",

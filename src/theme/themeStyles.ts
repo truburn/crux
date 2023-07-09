@@ -1,3 +1,5 @@
+import { colorVariations } from "./colors";
+
 const fontFamilies = {
   Quicksand: {
     family: `'Quicksand', sans-serif`,
@@ -12,8 +14,7 @@ const fontFamilies = {
 };
 
 export const theme = {
-  base: "light",
-  color: "#098765", // temporary for setup
+  colors: colorVariations,
   fonts: {
     body: {
       fontFamily: fontFamilies.Quicksand.family,
@@ -25,8 +26,4 @@ export const theme = {
     },
   },
   fontFamilies,
-  seperator: {
-    width: 1,
-    color: "rgba(0, 0, 0, 0.25)",
-  },
 };
