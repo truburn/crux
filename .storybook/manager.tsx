@@ -16,7 +16,7 @@ addons.setConfig({
       "utils",
     ],
     renderLabel: (item) => {
-      if (item.type === "group") {
+      if (item.type === "group" && !item.parent) {
         return <>@{item.name}</>;
       }
 
