@@ -1,7 +1,7 @@
 import { css } from "@emotion/css";
 import { theme } from "@/theme";
 
-export function useFormGroupClasses() {
+export function useCodeClasses() {
   const root = css({
     borderStyle: "solid",
     borderWidth: 1,

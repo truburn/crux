@@ -1,11 +1,9 @@
 import { css } from "@emotion/css";
-import { useTheme } from "@emotion/react";
+import { theme } from "@/theme";
 
 export function useIconClasses() {
-  const theme = useTheme();
-
   const root = css({
-    color: theme.color,
+    color: theme.colors.primary.main,
   });
 
   return { root };

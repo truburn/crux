@@ -4,6 +4,8 @@ import { withThemeFromJSXProvider } from "@storybook/addon-styling";
 import { ThemeProvider } from "@emotion/react";
 import { theme, GlobalStyles } from "../src/theme";
 import { withReactQuery } from "./decorators/withReactQuery";
+import docsComponents from "./docsComponents";
+import sbTheme from "./theme";
 
 const preview: Preview = {
   parameters: {
@@ -13,6 +15,13 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/,
       },
+      expanded: true,
+      hideNoControlsWarning: true,
+      sort: "requiredFirst",
+    },
+    docs: {
+      components: docsComponents,
+      theme: sbTheme,
     },
   },
   decorators: [

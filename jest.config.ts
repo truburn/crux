@@ -1,11 +1,16 @@
 import type { Config } from "jest";
-const { pathsToModuleNameMapper } = require(`ts-jest`);
-const tsconfig = require(`./tsconfig.json`);
+import { pathsToModuleNameMapper } from "ts-jest";
+import tsconfig from "./tsconfig.json";
 
 const config: Config = {
   verbose: true,
   collectCoverage: true,
-  collectCoverageFrom: ["src/**/*.{ts,tsx}"],
+  collectCoverageFrom: [
+    "src/**/*.{ts,tsx}",
+    "!src/**/index.ts",
+    "!src/**/*.stories.tsx",
+    "!src/**/*.types.ts",
+  ],
   coverageDirectory: "coverage",
   testEnvironment: "jsdom",
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],

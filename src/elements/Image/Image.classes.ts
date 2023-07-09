@@ -1,13 +1,11 @@
 import { css } from "@emotion/css";
-import { useTheme } from "@emotion/react";
+import { theme } from "@/theme";
 
 export function useImageClasses() {
-  const theme = useTheme();
-
   const root = css({
     borderStyle: "solid",
     borderWidth: 1,
-    borderColor: theme.color,
+    borderColor: theme.colors.primary.main,
   });
 
   return { root };

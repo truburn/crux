@@ -1,6 +1,4 @@
-import path from "path";
 import type { StorybookConfig } from "@storybook/react-vite";
-import { mergeConfig } from "vite";
 
 const config: StorybookConfig = {
   stories: [
@@ -27,5 +25,10 @@ const config: StorybookConfig = {
     defaultName: "Overview",
   },
   staticDirs: ["../public"],
+  typescript: {
+    reactDocgen: "react-docgen",
+    skipBabel: true,
+    check: false,
+  },
 };
 export default config;

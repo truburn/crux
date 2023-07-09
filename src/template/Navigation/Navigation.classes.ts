@@ -1,9 +1,7 @@
 import { css } from "@emotion/css";
-import { useTheme } from "@emotion/react";
+import { theme } from "@/theme";
 
 export function useNavigationClasses() {
-  const theme = useTheme();
-
   const root = css({
     display: "flex",
     flexDirection: "column",

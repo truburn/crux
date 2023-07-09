@@ -1,10 +1,8 @@
 import { css } from "@emotion/css";
-// import { useTheme } from "@emotion/react";
+// import { theme } from "@/theme";
 
 export function useHeaderClasses() {
-  // const theme = useTheme();
-
-  const root = css({
+  //   const root = css({
     display: "flex",
     flexDirection: "row",
     alignItems: "center",

@@ -1,11 +1,9 @@
+import type { ColorVariations } from "@/theme/colors";
+
 export interface MyTheme {
-  color: string;
+  colors: Record<string, ColorVariations>;
   fonts: Record<string, ThemeFont>;
   fontFamilies?: Record<string, FontFamily>;
-  seperator: {
-    width: number;
-    color: string;
-  };
 }
 
 export interface ThemeFont {

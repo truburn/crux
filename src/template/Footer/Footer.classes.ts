@@ -1,9 +1,7 @@
 import { css } from "@emotion/css";
-import { useTheme } from "@emotion/react";
+import { theme } from "@/theme";
 
 export function useFooterClasses() {
-  const theme = useTheme();
-
   const root = css({
     maxWidth: "100%",
     borderStyle: "solid",
