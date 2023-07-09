@@ -12,7 +12,8 @@ const fontFamilies = {
 };
 
 export const theme = {
-  color: "blue", // temporary for setup
+  base: "light",
+  color: "#098765", // temporary for setup
   fonts: {
     body: {
       fontFamily: fontFamilies.Quicksand.family,

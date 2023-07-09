@@ -4,6 +4,7 @@ import { withThemeFromJSXProvider } from "@storybook/addon-styling";
 import { ThemeProvider } from "@emotion/react";
 import { theme, GlobalStyles } from "../src/theme";
 import { withReactQuery } from "./decorators/withReactQuery";
+import docsComponents from "./docsComponents";
 
 const preview: Preview = {
   parameters: {
@@ -16,6 +17,9 @@ const preview: Preview = {
       expanded: true,
       hideNoControlsWarning: true,
       sort: "requiredFirst",
+    },
+    docs: {
+      components: docsComponents,
     },
   },
   decorators: [

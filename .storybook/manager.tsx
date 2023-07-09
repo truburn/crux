@@ -15,13 +15,13 @@ addons.setConfig({
       "typography",
       "utils",
     ],
-    renderLabel: (item) => {
-      if (item.type === "group" && !item.parent) {
-        return <>@{item.name}</>;
-      }
+    // renderLabel: (item) => {
+    //   if (item.type === "group" && !item.parent) {
+    //     return <>@{item.name}</>;
+    //   }
 
-      return <>{item.name}</>;
-    },
+    //   return <>{item.name}</>;
+    // },
   },
   theme: theme,
 });
